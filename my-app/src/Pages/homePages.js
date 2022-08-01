@@ -1,15 +1,21 @@
 import { Header } from "../components/Header";
-
+import { useNavigate } from "react-router-dom";
+import "./style.css"
 
 export function HomePages() {
+    const navigate = useNavigate()
+
     return (
-        <div>
+        <div className="homepage">
             <Header />
-            <div className="container">
-                <div className="row" style={{display: 'flex',  justifyContent:'center', alignItems:'center', marginTop:"10%"}}>
+            <div className="container bmi"
+            onClick={() => {
+				navigate(`/bmi-calculator`);
+			}} >
+                <div className="row " >
                     <div  className="card mb-3" style={{maxWidth: "540px"}}>
                         <div  className="row g-0">
-                            <div  className="col-md-4">
+                            <div  className="col-md-4 cardimg">
                                 <img src="https://cdn.medimagazin.com.tr/cdn/images/muayene/bmi2.jpg" style={{marginTop:"8%"}} className="img-fluid rounded-start" alt="..."/>
                             </div>
                             <div  className="col-md-8">
@@ -22,7 +28,7 @@ export function HomePages() {
                     </div>
                 </div>
             </div>
-            <div className="container" style={{display: 'flex',  justifyContent:'center', alignItems:'center'}}>
+            <div className="container nutritionist" >
                 <div className="row">
                     <div  className="card mb-3" style={{maxWidth: "540px"}}>
                         <div  className="row g-0">
@@ -39,7 +45,7 @@ export function HomePages() {
                     </div>
                 </div>
             </div>
-            <div className="container" style={{display: 'flex',  justifyContent:'center', alignItems:'center'}}>
+            <div className="container gym">
                 <div className="row">
                     <div  className="card mb-3" style={{maxWidth: "540px"}}>
                         <div  className="row g-0">
