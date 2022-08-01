@@ -1,4 +1,6 @@
-
+body{
+    background-color: #fafafa !important;
+}
 .calculator {
     display: flex;
     flex-direction: column;
@@ -7,7 +9,7 @@
     padding-top : 1%;
     padding-left: 20%;
     width: 75%;
-    
+    background-color: white;
 }
 
 .bmical {
@@ -62,6 +64,17 @@ p {
 }
 
 .img-container img {
-    height: 150px;
+    height: 250px;
     
+}
+.btnright{
+    position: absolute;
+    left: 40px;
+    top: 150px;
+
+}
+.btnleft{
+    position: absolute;
+    top: 150px;
+    left:80% ;
 }

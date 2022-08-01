@@ -44,13 +44,13 @@ export function BmiCalculator() {
     imgSrc = null
   } else {
     if(bmi < 18.5) {
-      imgSrc = ""
+      imgSrc = "https://media.istockphoto.com/vectors/vector-drawing-of-couple-young-people-in-summer-cotton-jeans-clothing-vector-id1254410004?k=20&m=1254410004&s=612x612&w=0&h=kPD76ziUoUzG2E56rEsHoVXZPDZAZ3aePjnvsLvHuMY="
     } else if (bmi >= 18.5 && bmi < 25) {
-      imgSrc = "https://github.com/fireclint/bmi-calculator-react/blob/main/src/assets/underweight.png?raw=true"
+      imgSrc = "https://media.istockphoto.com/vectors/cartoon-characters-people-plus-size-couple-vector-vector-id1164005096?k=20&m=1164005096&s=612x612&w=0&h=1epgYlUijljS45NGiLYoW4nS56d9dG5jB8lKdodb5nw="
     } else if (bmi >= 25 && bmi < 30) {
-      imgSrc = "https://github.com/fireclint/bmi-calculator-react/blob/main/src/assets/overweight.png?raw=true"
+      imgSrc = "https://us.123rf.com/450wm/kos911/kos9111903/kos911190300084/124351573-a-man-and-a-woman-with-obesity-unhealthy-lifestyle-incorrect-food-concept-health-problems-of-fast-fo.jpg?ver=6"
     } else if(bmi >= 30 ){
-      imgSrc = "https://banner2.cleanpng.com/20180821/ptj/kisspng-drawing-obesity-painting-sketch-vitamin-dieting-and-obesity-5b7c2cc038a816.2885828115348645762321.jpg"
+      imgSrc = "https://media.istockphoto.com/vectors/man-and-a-woman-with-obesity-vector-id1059059766?k=20&m=1059059766&s=612x612&w=0&h=l8qTCsHx9rz6M-b3pXgo7-V1hBEjzwkNIZ4SbNZVCmE="
     }
     
   }
@@ -61,7 +61,14 @@ export function BmiCalculator() {
   }
 
   return (
+    <>
+    
+      <a className="btn btn-success btnright" href="">Nutritionist</a>
+      <a className="btn btn-success btnleft" href="">Gym</a>  
+    
+    
     <div className="calculator">
+        
       <div className="container bmical">
         <h2 className="center">BMI Calculator</h2>
         <form className="calform" onSubmit={calcBmi}>
@@ -83,7 +90,7 @@ export function BmiCalculator() {
 
         <div className="center">
           <h3>Your BMI is: {bmi}</h3>
-          <p>{message}</p>
+          <h6>{message}</h6>
         </div>
 
         <div className="img-container">
@@ -91,6 +98,7 @@ export function BmiCalculator() {
         </div> 
       </div>
     </div>
+    </>
   );
 }
 
