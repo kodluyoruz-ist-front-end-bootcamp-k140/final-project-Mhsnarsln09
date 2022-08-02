@@ -1,5 +1,5 @@
 import { Header } from "../components/Header";
-import "./style.css"
+import "./page.css"
 
 
 export function AboutPages() {

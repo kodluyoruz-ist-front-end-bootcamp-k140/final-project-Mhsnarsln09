@@ -1,5 +1,5 @@
 import React, { useState } from "react"
-import "./style.css"
+import "./calculator.css"
 import toast from "react-hot-toast";
 import { useNavigate } from "react-router-dom";
 

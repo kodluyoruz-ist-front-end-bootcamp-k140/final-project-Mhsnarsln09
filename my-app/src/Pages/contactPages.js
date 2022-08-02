@@ -1,5 +1,5 @@
 import { Header } from "../components/Header";
-import "./style.css"
+import "./page.css"
 export function ContactPages() {
     return (
         < >
@@ -24,14 +24,13 @@ export function ContactPages() {
                                 <label htmlFor="inputSurname" className="form-label">Surname</label>
                                 <input className="form-control" id="inputContactSurname" />
                             </div>
-                            <div className="col-12">
-                                <label htmlFor="inputEmail" className="form-label">Email</label>
-                                <input type="email" className="form-control" id="inputContactEmail" />
+                            <div className="mb-3">
+                                <label htmlFor="exampleFormControlInput1" className="form-label">Email address</label>
+                                <input type="email" className="form-control" id="exampleFormControlInput1" placeholder="name@example.com"/>
                             </div>
-                            <div className="col-12 ">
-                                <label htmlFor="exampleFormControlTextarea1" className="form-label">What can we help you with?</label>
+                            <div className="mb-3">
+                                <label htmlFor="exampleFormControlTextarea1" className="form-label">Example textarea</label>
                                 <textarea className="form-control" id="exampleFormControlTextarea1" rows="5"></textarea>
-
                             </div>
 
                             <div className="col-12">
