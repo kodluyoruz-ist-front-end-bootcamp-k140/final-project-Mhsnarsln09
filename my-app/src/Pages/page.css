@@ -40,6 +40,8 @@
     text-align: center;
     margin-top: 5px;
     color: #1A8B9D;
+    font-family: 'Italianno', cursive;
+
 }
 .contactdiv{
     margin-top: 8%;
@@ -51,4 +53,7 @@
 .contactleft{
     
     width: 45%;
+}
+.contactinput{
+    margin-left: 0;
 }

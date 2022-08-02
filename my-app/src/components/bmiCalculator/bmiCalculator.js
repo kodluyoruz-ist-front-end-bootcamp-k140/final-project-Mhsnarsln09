@@ -66,10 +66,6 @@ export function BmiCalculator() {
 
     return (
         <>
-
-
-
-
             <div className="calculator">
 
                 <div className="container bmical">
