@@ -8,6 +8,7 @@ export function HomePages() {
     return (
         <div className="homepage">
             <Header />
+            {/* *****************      BMİ CALCULATOR CARD   ***************** */}
             <div className="container bmi"
             onClick={() => {
 				navigate(`/bmi-calculator`);
@@ -28,6 +29,7 @@ export function HomePages() {
                     </div>
                 </div>
             </div>
+             {/* *****************      NUTRITIONIST CARD   ***************** */}
             <div className="container nutritionist" >
                 <div className="row">
                     <div  className="card mb-3" style={{maxWidth: "540px"}}>
@@ -45,6 +47,7 @@ export function HomePages() {
                     </div>
                 </div>
             </div>
+             {/* *****************      GYM CARD   ***************** */}
             <div className="container gym">
                 <div className="row">
                     <div  className="card mb-3" style={{maxWidth: "540px"}}>

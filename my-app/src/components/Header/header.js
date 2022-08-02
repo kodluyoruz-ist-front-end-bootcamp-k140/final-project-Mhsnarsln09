@@ -3,7 +3,7 @@ import { Link } from "react-router-dom"
 
 export function Header() {
   return (
-    <nav className="navbar navbar-expand-lg navbar-dark" style={{backgroundColor:"#7DCE13"}} >
+    <nav className="navbar navbar-expand-lg navbar-dark sticky-top" style={{backgroundColor:"#7DCE13"}} >
   <div className="container-fluid">
     <Link className="navbar-brand" to="/">MyNutritionist</Link>
     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">

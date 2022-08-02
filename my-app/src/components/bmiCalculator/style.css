@@ -1,6 +1,4 @@
-body{
-    background-color: #fafafa !important;
-}
+
 .calculator {
     display: flex;
     flex-direction: column;
@@ -52,7 +50,7 @@ input {
    
   }
 .btno{
-    
+    color: white;
     background-color: #0a9db4;
 }
 p {
@@ -60,21 +58,15 @@ p {
 }
 
 .img-container {
-    text-align: center;
+    display: flex;
+    justify-content: center;
 }
 
 .img-container img {
-    height: 250px;
+    height: 10rem;
     
 }
-.btnright{
-    position: absolute;
-    left: 40px;
-    top: 150px;
-
-}
-.btnleft{
-    position: absolute;
-    top: 150px;
-    left:80% ;
+.dirpage{
+    display: flex;
+    justify-content: center;
 }

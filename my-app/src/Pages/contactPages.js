@@ -29,8 +29,8 @@ export function ContactPages() {
                                 <input type="email" className="form-control" id="inputContactEmail" />
                             </div>
                             <div className="col-12 ">
-                                <label for="exampleFormControlTextarea1" class="form-label">What can we help you with?</label>
-                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="5"></textarea>
+                                <label htmlFor="exampleFormControlTextarea1" className="form-label">What can we help you with?</label>
+                                <textarea className="form-control" id="exampleFormControlTextarea1" rows="5"></textarea>
 
                             </div>
 
