@@ -2,7 +2,7 @@ import { Header } from "../components/Header";
 import { useNavigate } from "react-router-dom";
 import "./page.css"
 
-export function HomePages() {
+export function UserHomePages() {
     const navigate = useNavigate()
 
     return (

@@ -21,10 +21,7 @@ export function Header() {
           <Link className="nav-link active" to={"/contact"}>Contact Us</Link>
         </li>
       </ul>
-      <form className="d-flex" role="search">
-        <Link to="/" className="btn btn-outline-success" style={{color:"white"}}>Login</Link >
-        <Link  to="/" className="btn btn-success" style={{marginLeft:"5px"}}>Sign Up</Link >
-      </form>
+      
     </div>
   </div>
 </nav>

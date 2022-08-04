@@ -4,9 +4,10 @@ import { BmiCalculatorPages } from "./Pages";
 import { AboutPages } from "./Pages/aboutPages";
 import { ContactPages } from "./Pages/contactPages";
 import { ErrorPages } from "./Pages/errorPages";
-import { HomePages } from "./Pages/homePages";
+import { UserHomePages } from "./Pages/userHomePages";
 import { Toaster } from 'react-hot-toast';
 import { LoginPage } from "./Pages/loginPage";
+import { RegisterPage } from "./Pages/registerPage";
 
 
 function App() {
@@ -16,7 +17,8 @@ function App() {
       <Routes>
         <Route path="/" element={<LoginPage/>} >
         </Route>
-        <Route path="home" element={<HomePages />} />
+        <Route path="signup" element={<RegisterPage/>} />
+        <Route path="user-home" element={<UserHomePages />} />
         <Route path="about" element={<AboutPages />} />
         <Route path="contact" element={<ContactPages />} />
         <Route path="bmi-calculator" element={<BmiCalculatorPages />} />

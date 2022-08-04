@@ -1,4 +1,4 @@
-export * from "./homePages" 
+export * from "./userHomePages" 
 export * from "./aboutPages"
 export * from "./contactPages"
 export * from "./errorPages"
