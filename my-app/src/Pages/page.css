@@ -112,7 +112,9 @@
     background-color:#519259 ;
     color: white;
 }
+
 /* REGISTER PAGE */
+
 .registerformbox{
 
     justify-content: center;
@@ -134,7 +136,7 @@
     margin-top: 5%;
     text-align: center;
 }
-.regh5 a{
-    text-decoration-line: none;
+.regh5 span{
+    cursor: pointer;
     color:#519259
 }

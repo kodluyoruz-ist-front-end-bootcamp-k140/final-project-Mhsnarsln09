@@ -1,5 +1,6 @@
 import React from "react"
 import { Link } from "react-router-dom"
+import { HeaderButton } from "./headerButton"
 
 export function Header() {
   return (
@@ -21,7 +22,7 @@ export function Header() {
           <Link className="nav-link active" to={"/contact"}>Contact Us</Link>
         </li>
       </ul>
-      
+      <HeaderButton/>
     </div>
   </div>
 </nav>
