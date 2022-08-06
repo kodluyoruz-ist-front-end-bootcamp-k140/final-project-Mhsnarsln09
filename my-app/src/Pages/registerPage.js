@@ -20,7 +20,7 @@ export function RegisterPage() {
 
     return (
         <div className="loginpage">
-            <h1 className="loginheader">MyNutritionist</h1>
+            <h1 className="loginheader" onClick={()=>navigate(`/`)} style={{cursor:"pointer"}}>MyNutritionist</h1>
             <div className="registerformbox">
                 <form className="registerform" onSubmit={handleSubmit} >
                     <div className="mb-3">
@@ -33,10 +33,10 @@ export function RegisterPage() {
                         <input  type="password" className="form-control lgnfrm" defaultValue={password} onChange={e=>setPassword(e.target.value)} />
                     </div>
                     <button disabled ={!email || !password}
-                    type="submit" className="btn btn-success lgnbtn" >Sıgn Up</button>
+                    type="submit" className="btn btn-success lgnbtn" style={{marginTop:"6%"}}>Sıgn Up</button>
                 </form>
                  
-                 <p className="regh5">Already have an account? <span  onClick={()=>navigate(`/login`)}
+                 <p className="regh5">Already have an account? <span  onClick={()=>navigate(`/auth/login`)}
                  >Log In</span ></p>
             </div>
         </div>

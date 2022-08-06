@@ -95,14 +95,7 @@ export function BmiCalculator() {
                     <div className="img-container">
                         <img src={imgSrc} alt=""></img>
                     </div>
-                    <div className="dirpage">
-                        <button className="btn btn-info btno"
-                            style={{ marginRight: "10px" }}
-                            onClick={() => navigate("/")}>Nutritionist</button>
-
-                        <button className="btn btn-info btno"
-                            onClick={() => navigate("/")} >Gym</button>
-                    </div>
+                    
                 </div>
 
             </div>

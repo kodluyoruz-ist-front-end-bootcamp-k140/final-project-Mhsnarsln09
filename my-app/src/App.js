@@ -8,6 +8,7 @@ import { UserHomePages } from "./Pages/userHomePages";
 import { Toaster } from 'react-hot-toast';
 import { LoginPage } from "./Pages/loginPage";
 import { RegisterPage } from "./Pages/registerPage";
+import { AuthLayout } from "./Pages/authLayout";
 
 
 function App() {
@@ -16,16 +17,19 @@ function App() {
     <>
       <Toaster />
       <Routes>
-        <Route path="/"  element={<UserHomePages />}> 
-        </Route>
-        <Route path="signup" element={<RegisterPage/>} />
-        <Route path="login" element={<LoginPage/>} />
+        <Route path="/"  element={<UserHomePages />}/> 
         <Route path="user-home" element={<UserHomePages />} />
         <Route path="about" element={<AboutPages />} />
         <Route path="contact" element={<ContactPages />} />
         <Route path="bmi-calculator" element={<BmiCalculatorPages />} />
         <Route path="*" element={<ErrorPages />} />
         
+        <Route path="auth"  element={<AuthLayout/>}>
+          <Route path="signup" index={true} element={<RegisterPage/>} />
+          <Route path="login" element={<LoginPage/>} />
+
+        </Route>
+      
       </Routes>
     </>
 

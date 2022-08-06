@@ -1,0 +1,10 @@
+.navbar{
+    background-image: linear-gradient(to top, #dfe9f3 0%, white 100%);
+}
+/* headerButton */
+.lgnrgstr{
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 2%;
+    margin-right: 2%;
+}

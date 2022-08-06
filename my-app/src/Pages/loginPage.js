@@ -2,10 +2,12 @@ import { useState } from "react"
 import { useNavigate } from "react-router-dom"
 import { login } from "../firebase"
 import "./page.css"
+import {useDispatch} from "react-redux"
+import {login as loginHandle} from "../store/auth"
 
 export function LoginPage() {
     const navigate = useNavigate()
-
+    const dispatch = useDispatch()
     const [email, setEmail] = useState('')
     const [password, setPassword] = useState('')
     
@@ -13,11 +15,14 @@ export function LoginPage() {
         e.preventDefault()
         
         const user = await login(email, password)
-        console.log(user)
+        dispatch(loginHandle(user))
+        navigate('/',{
+            replace: true
+        })
     }
     return (
         <div className="loginpage">
-            <h1 className="loginheader">MyNutritionist</h1>
+            <h1 className="loginheader" onClick={()=>navigate(`/`)} style={{cursor:"pointer"}}>MyNutritionist</h1>
             <div className="loginformbox">
                 <form className="loginform" onSubmit={handleSubmit}>
                     <div className="mb-3">
@@ -35,8 +40,8 @@ export function LoginPage() {
             </div>
              
             <div className="signupbox">
-                <h5>Don't have an account?<span onClick={()=>navigate(`/signup`)}
-                style={{color:"#519259",cursor:"pointer"}}> Sign Up</span></h5>
+                <h5>Don't have an account?<span onClick={()=>navigate(`/auth/signup`)}
+                style={{color:"#5800FF",cursor:"pointer"}}> Sign Up</span></h5>
             </div>
         </div>
       
