@@ -4,7 +4,7 @@ export function ContactPages() {
     return (
         < >
             <Header />
-            <h1 className="display-1 contacthead">Good Food Good Health Good Life</h1>
+            <h1 className="display-1 contacthead" style={{marginTop:"4%"}}>Good Food Good Health Good Life</h1>
             <div className="container contactdiv">
                 <div className="row">
                     <div className="col-6 contactright" >
