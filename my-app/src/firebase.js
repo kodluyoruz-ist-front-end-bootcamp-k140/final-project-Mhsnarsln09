@@ -1,7 +1,9 @@
 
 import { initializeApp } from "firebase/app";
-import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword, signOut } from "firebase/auth"
+import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword, signOut,onAuthStateChanged } from "firebase/auth"
 import { toast } from "react-hot-toast"
+import store from "./store"
+import { login as loginHandle, logout as logoutHandle } from "./store/auth";
 
 const firebaseConfig = {
     apiKey: process.env.REACT_APP_API_KEY,
@@ -47,5 +49,20 @@ export const logout = async (email, password) => {
 
     }
 }
+onAuthStateChanged(auth, (user)=>{
+    if(user){
+
+    }else{
+
+    }
+})
+onAuthStateChanged(auth, (user)=>{
+    if(user){
+        
+        store.dispatch(loginHandle(user))
+    }else{
+        store.dispatch(logoutHandle())
+    }
+})
 
 export default app

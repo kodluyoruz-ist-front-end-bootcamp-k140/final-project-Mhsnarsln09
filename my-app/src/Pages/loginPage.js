@@ -2,12 +2,10 @@ import { useState } from "react"
 import { useNavigate } from "react-router-dom"
 import { login } from "../firebase"
 import "./page.css"
-import {useDispatch} from "react-redux"
-import {login as loginHandle} from "../store/auth"
+
 
 export function LoginPage() {
     const navigate = useNavigate()
-    const dispatch = useDispatch()
     const [email, setEmail] = useState('')
     const [password, setPassword] = useState('')
     
@@ -15,10 +13,12 @@ export function LoginPage() {
         e.preventDefault()
         
         const user = await login(email, password)
-        dispatch(loginHandle(user))
+        if(user){
+       
         navigate('/',{
             replace: true
         })
+    }
     }
     return (
         <div className="loginpage">

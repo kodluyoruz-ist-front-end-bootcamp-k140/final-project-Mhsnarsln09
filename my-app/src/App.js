@@ -9,6 +9,7 @@ import { Toaster } from 'react-hot-toast';
 import { LoginPage } from "./Pages/loginPage";
 import { RegisterPage } from "./Pages/registerPage";
 import { AuthLayout } from "./Pages/authLayout";
+import { NutritionistPage } from "./Pages/nutritionistPage";
 
 
 function App() {
@@ -22,6 +23,7 @@ function App() {
         <Route path="about" element={<AboutPages />} />
         <Route path="contact" element={<ContactPages />} />
         <Route path="bmi-calculator" element={<BmiCalculatorPages />} />
+        <Route path="nutritionist" element={<NutritionistPage/>}/>
         <Route path="*" element={<ErrorPages />} />
         
         <Route path="auth"  element={<AuthLayout/>}>

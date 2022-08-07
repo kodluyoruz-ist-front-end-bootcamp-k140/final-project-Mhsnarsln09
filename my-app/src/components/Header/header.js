@@ -36,7 +36,7 @@ export function Header() {
             <Link className="nav-link" aria-current="page" to="/bmi-calculator">BMI Analysis</Link>
           </li>
          {user && <li className="nav-item mb-1 ">
-            <Link className="nav-link " to="/about">Nutritionist</Link>
+            <Link className="nav-link " to="/nutritionist">Nutritionist</Link>
           </li>}
           {user && <li className="nav-item mb-1 ">
             <Link className="nav-link" to="/contact">Traning</Link>

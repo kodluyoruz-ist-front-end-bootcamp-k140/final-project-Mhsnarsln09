@@ -8,3 +8,19 @@
     margin-bottom: 2%;
     margin-right: 2%;
 }
+.hdrbtn{
+    background-image: linear-gradient(to right, #77A1D3 0%, #79CBCA 51%, #77A1D3 100%);
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;
+    box-shadow: 0 0 20px #eee;
+    border-radius: 10px;
+    display: block;
+}
+.hdrbtn:hover{
+    background-position: right center;
+    color: #fff;
+    text-decoration: none;
+}
