@@ -1,5 +1,36 @@
 /* HOME PAGE */
-
+.imgpage1{
+    position: absolute;
+    top: 12%;
+    left: 55%;
+}
+.imgpage1 img {
+    height: 40rem;
+    width: 40rem;
+    border-radius: 50%;
+}
+.imgpage2{
+    
+    position: absolute;
+    top: 52%;
+    left: 45%;
+    
+}
+.imgpage2 img{
+    height: 350px;
+    width: 350px;
+    opacity: 0.9;
+    border-radius: 50%;
+}
+.textpage1{
+    height: 10%;
+    width: 30%;
+    margin-top: 10%;
+    margin-left: 10%;
+    padding: 1rem;
+    border-style: outset;
+    border-radius: 20%;
+}
 
 /* ABOUT PAGE */
 .carousel {
