@@ -1,10 +1,14 @@
 import { Header } from "../components/Header";
+import { AuthFalse, AuthTrue } from "../components/homePage";
+import { useSelector } from "react-redux";
+import { useNavigate } from "react-router-dom";
 
 import "./page.css"
 
 
 export function UserHomePages() {
-
+    const { user } = useSelector(state => state.auth)
+    const navigate = useNavigate()
 
     return (
         <div>
@@ -15,14 +19,15 @@ export function UserHomePages() {
             <div className="imgpage2">
                 <img src="https://www.acibadem.com.tr/hayat/Images/YayinMakaleler/diyet-hakkinda-merak-edilen-9-soru_5189_1.jpg" alt="..." />
             </div>
-            <div className="textpage1">
-                <h2>BMI Analysis</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, omnis?</p>
+            <div>
+                <div className="textpage1" onClick={()=>navigate(`/bmi-calculator`)}>
+                    <h2>BMI Analysis</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, omnis?</p>
+                </div>
+                {!user && <AuthFalse />}
+                {user && <AuthTrue/>}
+
             </div>
-           
-
-
-
         </div>
     )
 }

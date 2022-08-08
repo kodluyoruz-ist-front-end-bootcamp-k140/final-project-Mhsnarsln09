@@ -21,6 +21,7 @@ export function LoginPage() {
     }
     }
     return (
+        <>
         <div className="loginpage">
             <h1 className="loginheader" onClick={()=>navigate(`/`)} style={{cursor:"pointer"}}>MyNutritionist</h1>
             <div className="loginformbox">
@@ -44,6 +45,7 @@ export function LoginPage() {
                 style={{color:"#5800FF",cursor:"pointer"}}> Sign Up</span></h5>
             </div>
         </div>
+        </>
       
     )
 }

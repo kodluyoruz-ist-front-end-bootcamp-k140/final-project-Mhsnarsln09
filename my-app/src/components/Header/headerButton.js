@@ -18,7 +18,7 @@ export function HeaderButton(){
        {!user && <Link to="/auth/login" className="btn hdrbtn" style={{color:"white"}}>Login</Link >}
        {!user && <Link  to="/auth/signup" className="btn hdrbtn" style={{marginLeft:"5px",color:"white"}}>Sign Up</Link >}
        {user && <h6  style={{marginRight:"10px",paddingTop:"10px"}}>{user.email}</h6 >}
-       {user && <Link onClick={handleLogout} to="/auth/login" className="btn hdrbtn" style={{marginLeft:"5px",color:"white"}}>Log Out</Link >}
+       {user && <Link onClick={handleLogout} to="/" className="btn hdrbtn" style={{marginLeft:"5px",color:"white"}}>Log Out</Link >}
        
       </form>
     )

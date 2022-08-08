@@ -1,7 +1,7 @@
 import React, { useState } from "react"
 import "./calculator.css"
 import toast from "react-hot-toast";
-import { useNavigate } from "react-router-dom";
+
 
 export function BmiCalculator() {
 
@@ -62,7 +62,7 @@ export function BmiCalculator() {
     let reload = () => {
         window.location.reload()
     }
-    const navigate = useNavigate()
+
 
     return (
         <>

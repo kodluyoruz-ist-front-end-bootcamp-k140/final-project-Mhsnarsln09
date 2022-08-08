@@ -23,11 +23,12 @@
     border-radius: 50%;
 }
 .textpage1{
+    cursor: pointer;
     height: 10%;
     width: 30%;
-    margin-top: 10%;
-    margin-left: 10%;
-    padding: 1rem;
+    margin-top: 9%;
+    margin-left: 8%;
+    padding: 2rem;
     border-style: outset;
     border-radius: 20%;
 }
@@ -70,22 +71,17 @@
 }
 
 /* LOGIN PAGE */
-.loginpage {
-    background-color: #D9AFD9;
-    background-image: linear-gradient(0deg, #D9AFD9 0%, #97D9E1 100%);
 
-    height: 100vh;
-}
 
 .loginheader {
     text-align: center;
     font-family: 'Italianno', cursive;
     font-size: 1100%;
-    color: #003865;
+    color: #3FA796;
 }
 
 .loginformbox {
-
+    display: flex;
     justify-content: center;
     margin-top: 1%;
     margin-left: 38%;
@@ -146,6 +142,7 @@
     color: #fff;
     text-decoration: none;
 }
+
 
 
 
