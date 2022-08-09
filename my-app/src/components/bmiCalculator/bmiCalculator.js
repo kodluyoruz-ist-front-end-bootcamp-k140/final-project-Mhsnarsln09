@@ -59,7 +59,8 @@ export function BmiCalculator() {
     }
 
 
-    let reload = () => {
+    let reload = (event) => {
+        event.preventDefault()
         window.location.reload()
     }
 

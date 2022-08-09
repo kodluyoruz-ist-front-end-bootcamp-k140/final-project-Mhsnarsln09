@@ -1,11 +1,12 @@
 import { useState } from "react"
-import { useNavigate } from "react-router-dom"
+import { useNavigate, useLocation } from "react-router-dom"
 import { login } from "../firebase"
 import "./page.css"
 
 
 export function LoginPage() {
     const navigate = useNavigate()
+    const location = useLocation()
     const [email, setEmail] = useState('')
     const [password, setPassword] = useState('')
     
@@ -15,9 +16,7 @@ export function LoginPage() {
         const user = await login(email, password)
         if(user){
        
-        navigate('/',{
-            replace: true
-        })
+        navigate(location?.state?.return_url || "/")
     }
     }
     return (
@@ -39,11 +38,11 @@ export function LoginPage() {
                  type="submit" className="btn btn-success lgnbtn" >Log In</button>
                  </form>
             </div>
-             
             <div className="signupbox">
-                <h5>Don't have an account?<span onClick={()=>navigate(`/auth/signup`)}
+                <h5>Don't have an account?<span onClick={()=>navigate('/auth/signup')}
                 style={{color:"#5800FF",cursor:"pointer"}}> Sign Up</span></h5>
             </div>
+ 
         </div>
         </>
       

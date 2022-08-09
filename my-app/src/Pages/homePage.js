@@ -6,7 +6,7 @@ import { useNavigate } from "react-router-dom";
 import "./page.css"
 
 
-export function UserHomePages() {
+export function HomePages() {
     const { user } = useSelector(state => state.auth)
     const navigate = useNavigate()
 
