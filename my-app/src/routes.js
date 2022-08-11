@@ -9,6 +9,7 @@ import { RegisterPage } from "./Pages/registerPage";
 import { AuthLayout } from "./Pages/authLayout";
 import { NutritionistPage } from "./Pages/nutritionistPage";
 import { PrivateRoute} from "./components/privateRoute"
+import { Training } from "./Pages/trainingPage";
 
 
 const routes = [
@@ -35,6 +36,11 @@ const routes = [
         {
             path:"nutritionist",
             element:<NutritionistPage/>,
+            auth:true
+        },
+        {
+            path:"training",
+            element:<Training/>,
             auth:true
         }
 ]

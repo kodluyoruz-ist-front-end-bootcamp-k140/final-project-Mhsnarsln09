@@ -7,7 +7,7 @@ export function AuthTrue() {
                 <h2>Nutritionist</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, omnis?</p>
             </div>
-            <div className="authTrue" onClick={() => navigate(`/nut`)}>
+            <div className="authTrue" onClick={() => navigate(`/training`)}>
                 <h2>Training</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, omnis?</p>
             </div>

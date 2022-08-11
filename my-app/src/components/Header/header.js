@@ -10,7 +10,7 @@ export function Header() {
   return (
     <nav className="navbar bg-light fixed-top">
   <div className="container-fluid">
-    <Link className="navbar-brand" to="/"><h4 style={{color:"#2C3333"}}>MyNutritionist</h4></Link>
+    <Link className="navbar-brand" to="/"><h5 style={{color:"#2C3333"}}>MyNutritionist</h5></Link>
     <button className="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
       <span className="navbar-toggler-icon"></span>
     </button>
@@ -39,7 +39,7 @@ export function Header() {
             <Link className="nav-link " to="/nutritionist">Nutritionist</Link>
           </li>}
           {user && <li className="nav-item mb-1 ">
-            <Link className="nav-link" to="/contact">Training</Link>
+            <Link className="nav-link" to="/training">Training</Link>
           </li>}
         </ul>
         

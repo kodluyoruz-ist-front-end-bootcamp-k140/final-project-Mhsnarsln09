@@ -176,3 +176,10 @@
     cursor: pointer;
     color: #5800FF
 }
+/* TRAINING PAGE */
+.trainingpage{
+    margin-top: 5%;
+}
+.trainingimg{
+    border-radius: 10px;
+}

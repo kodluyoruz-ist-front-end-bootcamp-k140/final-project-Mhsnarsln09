@@ -1,10 +1,10 @@
 import { Header } from "../components/Header";
 
-export function NutritionistPage () {
+export function NutritionistPage() {
 
-    return(
+    return (
         <>
-        <Header/>
+            <Header />
         </>
     )
 }

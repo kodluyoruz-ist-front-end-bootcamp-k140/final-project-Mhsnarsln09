@@ -13,7 +13,7 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <Provider store={store} >
     <BrowserRouter>
-      <Toaster />
+      <Toaster position='top-right' />
       <App />
     </BrowserRouter>
   </Provider >
