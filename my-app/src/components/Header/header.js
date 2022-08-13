@@ -41,6 +41,9 @@ export function Header() {
           {user && <li className="nav-item mb-1 ">
             <Link className="nav-link" to="/training">Training</Link>
           </li>}
+          {user && <li className="nav-item mb-1 ">
+            <Link className="nav-link" to="/my-diet-plan">My Diet Plan</Link>
+          </li>}
         </ul>
         
       </div>

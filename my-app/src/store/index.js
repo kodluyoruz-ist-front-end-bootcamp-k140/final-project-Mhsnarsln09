@@ -1,9 +1,11 @@
 import { configureStore } from "@reduxjs/toolkit"
 
 import auth from "./auth"
+import chats from "./chats"
 const store = configureStore({
     reducer:{
-        auth
+        auth,
+        chats
     },
     middleware: getDefaultMiddleware =>
     getDefaultMiddleware({

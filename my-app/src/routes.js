@@ -10,6 +10,7 @@ import { AuthLayout } from "./Pages/authLayout";
 import { NutritionistPage } from "./Pages/nutritionistPage";
 import { PrivateRoute} from "./components/privateRoute"
 import { Training } from "./Pages/trainingPage";
+import MyDietPlanPage from "./Pages/myDietPlanPage";
 
 
 const routes = [
@@ -41,6 +42,11 @@ const routes = [
         {
             path:"training",
             element:<Training/>,
+            auth:true
+        },
+        {
+            path:"my-diet-plan",
+            element:<MyDietPlanPage/>,
             auth:true
         }
 ]

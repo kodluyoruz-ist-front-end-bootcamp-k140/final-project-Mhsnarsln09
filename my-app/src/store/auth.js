@@ -9,6 +9,7 @@ const auth = createSlice({
     initialState,
     reducers: {
         login: (state, action) => {
+            
             localStorage.setItem("user", JSON.stringify(action.payload))
             state.user = action.payload
         },
