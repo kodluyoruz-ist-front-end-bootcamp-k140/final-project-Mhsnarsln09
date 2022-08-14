@@ -14,7 +14,9 @@ export function Chat() {
         await addMessage({
             message,
             uid: user.uid
-        })}
+        })
+       setMessage("")
+    }
 
         const chatRef = query(collection(db, "messages"), orderBy("createdAt", "asc") ,where("uid", "==" , user.uid))
         const getChat = async () => {
@@ -42,7 +44,7 @@ export function Chat() {
                 <div className="container frmcontainer">
                     <form onSubmit={submitHandle}>
                     <div className="frm" >
-                        <input type="text" className='frm-input' onChange={e => setMessage(e.target.value)} />
+                        <input type="text" className='frm-input'value={message} onChange={e => setMessage(e.target.value)} />
                         <button className='btn btn-primary frm-btn' type="submit"> 
                             Send
                         </button>
