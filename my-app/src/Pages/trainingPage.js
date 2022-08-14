@@ -5,6 +5,7 @@ import { db } from "../firebase";
 import { collection, getDocs } from "firebase/firestore"
 
 import "./page.css"
+import { Pagination } from "../components/pagination";
 
 export function Training() {
     const [gyms, setGyms] = useState([])
@@ -13,14 +14,23 @@ export function Training() {
         const data = await getDocs(gymsCollectionRef)
         setGyms(data.docs.map((doc) => ({ ...doc.data(), id: doc.id })))
     }
+    const [currentPage, setCurrentPage] = useState(1)
+    const [itemsPerPage, setItemsPerPage] = useState(2)
     useEffect(() => {
         getGyms()
-    }, [])
+    }, [itemsPerPage, setItemsPerPage])
+    // PAGİNATON 
+    const indexofLastItems = currentPage * itemsPerPage
+    const indexOfFirstItems = indexofLastItems - itemsPerPage
+    const currentGyms = gyms.slice(indexOfFirstItems, indexofLastItems)
+    const totalPagesNum = Math.ceil(gyms.length/itemsPerPage)
+
+
     return (
-        <>
+        <div>
             <Header />
             <div className="container trainingpage">
-                {gyms.map((gym,i) => {
+                {currentGyms.map((gym,i) => {
                     return (
                         <div className="card mb-3" key={gym.id}>
                             <div className="row g-0">
@@ -33,13 +43,13 @@ export function Training() {
                                         </div>
                                         <div className="carousel-inner">
                                             <div className="carousel-item active">
-                                                <img src="https://cdn.mos.cms.futurecdn.net/t4LzQQL75En7bRD7iyxNWd.jpg" className="d-block w-100 trainingimg" alt="..." />
+                                                <img src="https://www.aspilatesizmir.com/wp-content/uploads/2018/09/personal-trainer-1.jpg" className="d-block w-100 trainingimg" alt="..."/>
                                             </div>
                                             <div className="carousel-item">
-                                                <img src="https://www.singlecare.com/blog/wp-content/uploads/2021/12/Blog_122921_Best_diet_for_weight_loss.png" className="d-block w-100 trainingimg" alt="..." />
+                                                <img src="https://conteudo.imguol.com.br/c/entretenimento/b9/2021/09/14/personal-trainer-exercicio-treino-1631649931301_v2_4x3.jpg" className="d-block w-100 trainingimg" alt="..." />
                                             </div>
                                             <div className="carousel-item">
-                                                <img src="https://www.healthkart.com/connect/wp-content/uploads/2016/11/banner-5.jpg" className="d-block w-100 trainingimg" alt="..." />
+                                                <img src="https://www.trainerize.com/blog/wp-content/uploads/2019/02/Fitness_for_2_selling_personal_training_to_couples.jpg" className="d-block w-100 trainingimg" alt="..." />
                                             </div>
                                         </div>
                                         <button className="carousel-control-prev" type="button" data-bs-target={`#carouselExampleIndicators${i}`} data-bs-slide="prev">
@@ -57,14 +67,15 @@ export function Training() {
                                         <h5 className="card-title mt-1">{gym.name}</h5>
                                         <p className="card-text mt-2">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
                                         <p className="card-text mt-4">Email: {`${gym.name.toLowerCase().replace(/ /g, "_")}@gmail.com`}</p>
-                                        <p className="card-text mt-5">Distance: {gym.distance}</p>
+                                        <p className="card-text mt-5">Distance: {gym.distance} Km</p>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     )
                 })}
+                <Pagination pages={totalPagesNum} setCurrentPage ={setCurrentPage}/>
             </div>
-        </>
+        </div>
     )
 }

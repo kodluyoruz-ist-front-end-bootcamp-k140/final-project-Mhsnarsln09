@@ -4,12 +4,12 @@ export function AuthTrue() {
     return (
         <>
             <div className="authTrue" onClick={() => navigate(`/nutritionist`)}>
-                <h2>Nutritionist</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, omnis?</p>
+                <h2 className="hph2">Nutritionist</h2>
+                <p>Contact your dietitian</p>
             </div>
             <div className="authTrue" onClick={() => navigate(`/training`)}>
-                <h2>Training</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, omnis?</p>
+                <h2 className="hph2">Training</h2>
+                <p>Best gyms for you</p>
             </div>
         </>
     )

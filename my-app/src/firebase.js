@@ -4,7 +4,7 @@ import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword, si
 import { toast } from "react-hot-toast"
 import store from "./store"
 import { login as loginHandle, logout as logoutHandle } from "./store/auth";
-import { getFirestore, collection, addDoc, onSnapshot, query, where,serverTimestamp, orderBy, doc} from "firebase/firestore"
+import { getFirestore, collection, addDoc, onSnapshot, query, where,serverTimestamp} from "firebase/firestore"
 import { setMessages } from "./store/chats";
 
 
@@ -70,7 +70,7 @@ onAuthStateChanged(auth, (user)=>{
         store.dispatch(logoutHandle())
     }
 })
-let count = 1
+
 export const addMessage = async data =>{
     try{
     data.createdAt = serverTimestamp()

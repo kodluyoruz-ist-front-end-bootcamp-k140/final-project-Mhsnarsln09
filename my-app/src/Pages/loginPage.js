@@ -21,8 +21,9 @@ export function LoginPage() {
     }
     return (
         <>
-        <div className="loginpage">
-            <h1 className="loginheader" onClick={()=>navigate(`/`)} style={{cursor:"pointer"}}>MyNutritionist</h1>
+        <div className="container loginpage">
+            <div className="row">
+            <h1 className="loginheader col-md" onClick={()=>navigate(`/`)} style={{cursor:"pointer"}}>MyNutritionist</h1>
             <div className="loginformbox">
                 <form className="loginform" onSubmit={handleSubmit}>
                     <div className="mb-3">
@@ -42,7 +43,7 @@ export function LoginPage() {
                 <h5>Don't have an account?<span onClick={()=>navigate('/auth/signup')}
                 style={{color:"#5800FF",cursor:"pointer"}}> Sign Up</span></h5>
             </div>
- 
+            </div>
         </div>
         </>
       

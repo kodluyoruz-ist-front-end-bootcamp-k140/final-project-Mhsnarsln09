@@ -21,8 +21,8 @@ export function HomePages() {
             </div>
             <div>
                 <div className="textpage1" onClick={()=>navigate(`/bmi-calculator`)}>
-                    <h2>BMI Analysis</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, omnis?</p>
+                    <h2 className="hph2">BMI Analysis</h2>
+                    <p>Find out your body mass index</p>
                 </div>
                 {!user && <AuthFalse />}
                 {user && <AuthTrue/>}
