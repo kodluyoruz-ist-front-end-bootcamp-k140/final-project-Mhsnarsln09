@@ -4,8 +4,8 @@ import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword, si
 import { toast } from "react-hot-toast"
 import store from "./store"
 import { login as loginHandle, logout as logoutHandle } from "./store/auth";
-import { getFirestore, collection, addDoc, onSnapshot, query, where,serverTimestamp} from "firebase/firestore"
-import { setMessages } from "./store/chats";
+import { getFirestore, collection, addDoc, serverTimestamp} from "firebase/firestore"
+
 
 
 
@@ -61,11 +61,6 @@ export const logout = async (email, password) => {
 onAuthStateChanged(auth, (user)=>{
     if(user){
         store.dispatch(loginHandle(user))
-        onSnapshot(query(collection(db, "messages"), where("uid", "==" , user.uid)), (doc)=>{
-            store.dispatch(setMessages(
-                doc.docs.reduce((messages, message) => [...messages, {...message.data(), id: message.id}], [])
-                ))
-        })
     }else{
         store.dispatch(logoutHandle())
     }

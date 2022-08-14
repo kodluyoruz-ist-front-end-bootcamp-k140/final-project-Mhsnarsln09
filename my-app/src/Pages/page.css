@@ -188,6 +188,35 @@
 .trainingimg{
     border-radius: 10px;
 }
+.searchbox {
+    border: 1px solid #dee2e6;
+    height: 60px;
+    border-radius: 40px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.searchbox input.searchbox-input {
+    border: none;
+    height: 40px;
+    width: calc(100% - 50px);
+    border-image: none;
+    border-color: none;
+    background: transparent;
+    outline: none;
+}
+
+.searchbox span {
+  cursor: pointer;
+  margin-right: 1%;
+}
+.sort{
+    display: flex;
+    justify-content: center;
+    padding-top: 15%;
+}
 /* NUTRITIONIST PAGE */
 .logodiv img{
     height: 700px;

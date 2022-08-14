@@ -13,6 +13,7 @@ import { Training } from "./Pages/trainingPage";
 import MyDietPlanPage from "./Pages/myDietPlanPage";
 
 
+
 const routes = [
     {
     path: "/",

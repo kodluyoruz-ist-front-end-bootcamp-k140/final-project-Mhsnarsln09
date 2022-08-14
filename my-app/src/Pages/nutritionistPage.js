@@ -6,12 +6,14 @@ export function NutritionistPage() {
 
     return (
         <div className="nutpag">
-           <div className="logodiv">
-                <img src="logo.png" alt="" />
-            </div>
+          
             <Header />
             <div className="container nutpage">
+            <div className="logodiv" style={{backgroundColor:"white", width:"85%", height:"100vh"}}>
+                <img src="logo.png" alt="" />
+            
                <Chat/> 
+               </div>
             </div>
             
         </div>
