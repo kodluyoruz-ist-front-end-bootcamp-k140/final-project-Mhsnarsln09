@@ -8,6 +8,28 @@
 
 ![Adsız1](https://user-images.githubusercontent.com/94838351/184639601-bfb85691-8cc0-4232-b7c7-d346793c1f08.png)
 
+<div>
+İf user false,
+You can reach:
+  <ul>
+    <li>Home</li>
+    <li>About us</li>
+    <li>Contact u</li>
+    <li>BMI Analysis => You can learn body mass index</li>
+  </ul>
+  if user true,
+  You can reach:
+   <ul>
+    <li>Home</li>
+    <li>About us Page</li>
+    <li>Contact us Page</li>
+    <li>BMI Analysis Page => You can learn body mass index.</li>
+    <li>Nutritionist Page => It's chat page with dietitian. You can send message your dietitian.</li>
+    <li>Traning Page => You can reach best gyms for you. You can sort and search best gyms.</li>
+    <li>My Diet Plan => You can see your diet list.</li>
+  </ul>
+</div>
+
 
 <h2>Technologies</h2>
 
