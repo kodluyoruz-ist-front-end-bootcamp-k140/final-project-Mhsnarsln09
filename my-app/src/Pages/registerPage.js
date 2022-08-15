@@ -11,7 +11,6 @@ export function RegisterPage() {
     const handleSubmit = async e => {
         e.preventDefault()
         const user = await register(email, password)
-        console.log(user)
 
     }
 
