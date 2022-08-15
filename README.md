@@ -1,11 +1,17 @@
 ﻿ # Final-project-Mhsnarsln09-MyNutritionistApp 
   
-  ### Siteye gitmek için [Buraya](https://mynutritionist-mhsnarsln.netlify.app/)
+  ## [Click me](https://mynutritionist-mhsnarsln.netlify.app/) Netlify Site: mynutritionist-mhsnarsln.netlify.app
+  
+  <hr/>
 <h2>Kodluyoruz Istanbul Front-End Bootcamp (K140)</h2>
+
+
 ![Adsız1](https://user-images.githubusercontent.com/94838351/184639601-bfb85691-8cc0-4232-b7c7-d346793c1f08.png)
 
 
 <h2>Technologies</h2>
+
+
 <div>
   <ul>
     <li>JavaScript</li>
