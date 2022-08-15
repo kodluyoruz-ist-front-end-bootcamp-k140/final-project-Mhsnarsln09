@@ -1,8 +1,8 @@
 ﻿ # Final-project-Mhsnarsln09-MyNutritionistApp 
 <h2>Kodluyoruz Istanbul Front-End Bootcamp (K140)</h2>
-<hr/>
+
 ![Adsız](https://user-images.githubusercontent.com/94838351/184638928-1b9913ad-dd05-40c5-843d-3eb2d9dcd637.png)
-<hr/>
+
 <h2>Technologies</h2>
 <div>
   <ul>
