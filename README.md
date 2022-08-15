@@ -6,7 +6,7 @@
 <h2>Kodluyoruz Istanbul Front-End Bootcamp (K140)</h2>
 
 
-![Adsız1](https://user-images.githubusercontent.com/94838351/184639601-bfb85691-8cc0-4232-b7c7-d346793c1f08.png)
+![Adsız1](https://user-images.githubusercontent.com/94838351/184639601-bfb85691-8cc0-4232-b7c7-d346793c1f08.png) https://drive.google.com/file/d/1nLStPa9xp2Zce2ppIUI3IrtibcMPKfbZ/view
 
 <div>
 İf user false,
